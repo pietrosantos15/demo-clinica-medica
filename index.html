@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clínica Vitta | Clínica médica com agendamento online</title>
+<meta name="description" content="Clínico geral, cardiologia, dermatologia, pediatria e mais. Escolha um horário e confirme a consulta pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,500;7..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#inicio"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="#0F4C4A"/><path d="M14 6v16M6 14h16" stroke="#F2A541" stroke-width="4" stroke-linecap="round"/></svg><span data-brand>Clínica Vitta</span></a>
+  <nav aria-label="Principal">
+    <a href="#especialidades">Especialidades</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <a class="btn btn-sm" href="#agenda">Agendar consulta</a>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Consulta marcada em poucos minutos, sem ligar e sem fila de espera</h1>
+      <p>Clínica médica com atendimento por hora marcada. Veja os horários livres ao lado, escolha o seu e a recepção confirma pelo WhatsApp.</p>
+      <ul class="facts">
+        <li>Atendimento por hora marcada</li>
+        <li>Particular e convênios</li>
+        <li>Retorno em até 30 dias sem custo</li>
+      </ul>
+    </div>
+
+    <aside class="agenda" id="agenda" aria-labelledby="ag-t">
+      <h2 id="ag-t">Escolha um horário</h2>
+      <label>Especialidade
+        <select id="esp">
+          <option>Clínico geral</option><option>Cardiologia</option><option>Dermatologia</option>
+          <option>Pediatria</option><option>Ginecologia</option><option>Ortopedia</option>
+        </select>
+      </label>
+      <div class="dias" id="dias" role="group" aria-label="Dias com horários livres"></div>
+      <div class="slots" id="slots" role="group" aria-label="Horários do dia"></div>
+      <a class="btn btn-block" id="confirm" aria-disabled="true" href="https://wa.me/5500900000000">Confirmar pelo WhatsApp</a>
+      <p class="resumo" id="resumo" aria-live="polite">Selecione um dia e um horário.</p>
+      <p class="small">Horários de exemplo. Na versão final, a clínica atualiza a agenda.</p>
+    </aside>
+  </section>
+
+  <section id="especialidades" class="block">
+    <h2>Especialidades e profissionais</h2>
+    <p class="lead">Cada especialidade atende em dias fixos da semana. Se o dia que você precisa não aparece, chame no WhatsApp e a recepção encontra uma alternativa.</p>
+    <table class="esp">
+      <thead><tr><th scope="col">Especialidade</th><th scope="col">Profissional</th><th scope="col">Atendimento</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Clínico geral</th><td>Dra. Helena Vasconcelos<br><small>CRM 00000/SP</small></td><td>Segunda, quarta e sexta</td></tr>
+        <tr><th scope="row">Cardiologia</th><td>Dr. Rafael Moura<br><small>CRM 00000/SP</small></td><td>Terça e quinta</td></tr>
+        <tr><th scope="row">Dermatologia</th><td>Dra. Camila Duarte<br><small>CRM 00000/SP</small></td><td>Quarta e sexta</td></tr>
+        <tr><th scope="row">Pediatria</th><td>Dra. Letícia Barros<br><small>CRM 00000/SP</small></td><td>Segunda a quinta</td></tr>
+        <tr><th scope="row">Ginecologia</th><td>Dra. Paula Sampaio<br><small>CRM 00000/SP</small></td><td>Terça e sexta</td></tr>
+        <tr><th scope="row">Ortopedia</th><td>Dr. Marcos Teixeira<br><small>CRM 00000/SP</small></td><td>Segunda e quinta</td></tr>
+      </tbody>
+    </table>
+    <p class="price">Consulta particular a partir de <strong>R$ 180</strong>. Atendemos os principais convênios: informe o seu plano ao agendar.</p>
+  </section>
+
+  <section id="como-funciona" class="block block-tint">
+    <h2>Como funciona</h2>
+    <ol class="steps">
+      <li><h3>Escolha o horário</h3><p>Selecione a especialidade, o dia e o horário na agenda aqui no site.</p></li>
+      <li><h3>Confirme pelo WhatsApp</h3><p>A mensagem já sai pronta. A recepção responde no mesmo dia útil confirmando a consulta.</p></li>
+      <li><h3>Chegue 10 minutos antes</h3><p>Leve um documento com foto e, se for por convênio, a carteirinha do plano.</p></li>
+    </ol>
+  </section>
+
+  <section id="duvidas" class="block">
+    <h2>Dúvidas frequentes</h2>
+    <div class="faq">
+      <details><summary>Preciso levar exames antigos?</summary><p>Sim, se você tiver. Exames e receitas anteriores ajudam o médico a entender o seu histórico e evitam repetir pedidos.</p></details>
+      <details><summary>Como funciona o atendimento por convênio?</summary><p>Informe o plano e o número da carteirinha ao agendar. A recepção confere a cobertura antes da consulta e avisa se algum procedimento precisar de autorização.</p></details>
+      <details><summary>Posso remarcar ou cancelar?</summary><p>Pode, pelo mesmo WhatsApp, com pelo menos 24 horas de antecedência. Assim o horário volta para a agenda e outro paciente consegue usar.</p></details>
+      <details><summary>A clínica atende crianças?</summary><p>Sim. A pediatria atende de segunda a quinta. Para recém-nascidos, avise ao agendar para reservarmos um horário mais longo.</p></details>
+    </div>
+  </section>
+
+  <section id="contato" class="block block-tint">
+    <h2>Como chegar</h2>
+    <div class="contact">
+      <div>
+        <h3>Endereço</h3>
+        <p>Avenida das Palmeiras, 850, sala 12<br>Centro, Sua Cidade</p>
+        <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Avenida+das+Palmeiras+850" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+        <p>Estacionamento conveniado e acesso para cadeirantes.</p>
+      </div>
+      <div>
+        <h3>Horário</h3>
+        <table class="hours">
+          <tr><th scope="row">Segunda a sexta</th><td>7h às 19h</td></tr>
+          <tr><th scope="row">Sábado</th><td>8h às 12h</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>WhatsApp</h3>
+        <p><a class="link" data-wa="Olá! Tenho uma dúvida sobre consultas." data-phone href="https://wa.me/5500900000000">(00) 90000-0000</a></p>
+        <p>Atendimento pela recepção em horário comercial. Em caso de urgência, procure o pronto atendimento mais próximo.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p><span data-brand>Clínica Vitta</span>. Responsável técnica: Dra. Helena Vasconcelos, CRM 00000/SP.</p>
+  <p>Site de demonstração com conteúdo de exemplo.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
